@@ -4,10 +4,10 @@
 //---------------------------------------------
 /*
 //Declaration 1
-const arr = ['1', 10, 'Vivek',true, 0.55]
-console.log(arr);//[ '1', 10, 'Vivek', true, 0.55 ]
+const arr = ['1', 10, 'chaitalee',true, 0.55]
+console.log(arr);//[ '1', 10, 'chaitalee', true, 0.55 ]
 console.log(arr[5]);//Undefine
-console.log(arr[2]);//Vivek
+console.log(arr[2]);//chaitalee
 
 //Declaration 2
 const arr2 = new Array(1,2,3,4,5)
