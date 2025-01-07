@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaitalee ghurde</title>
+</head>
+<body style="background-color: rgb(0, 11, 11); color: rgb(239, 235, 235);">
+    
+</body>
+<script>
+   const div= document.createElement('div') // to create a element
+   console.log(div);
+
+   div.className="main"
+//    div.id="myID"  hardcoded id
+   div.id=Math.round(Math.random()*10+1) // insert random id
+   div.setAttribute("title","generated title")   //not overwrite only set the values
+   div.style.backgroundColor="green"
+   div.style.padding="12px"
+   div.innerText="chaitalee ghurde"  //overwrites the values
+   const addtext=document.createTextNode("chaitalee ghurde")
+   div.appendChild(addtext)
+   document.body.appendChild(div)
+</script>
+</html>
