@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chaitalee ghurde/title>
+    <title>Document</title>
 </head>
-<body style="background-color: #212121; color: white;">
-    <ul class="langauge"></ul>
-    <li>Javascript </li>
+<body style="background-color:#212121; color: white;">
+    <ul class="lanaguge">
+        <li>
+javascript
+        </li>
+    </ul>
 </body>
+<script>
+function addlangname(langname)
+{
+const listelement = document.createElement('li');
+listelement.innerHTML=`${langname}`
+document.querySelector('.lanaguge').
+appendChild(listelement)
+}
+addlangname("HI")
+addlangname("java")
+
+//Optimised Approch Using createTextNode
+function optiLangauge(langname)
+{
+const listelement = document.createElement('li');
+listelement.appendChild(document.createTextNode(langname))
+document.querySelector('.lanaguge').appendChild(listelement)
+}
+optiLangauge("golang")
+
+// Editi li value
+
+const secontlang=document.querySelector("li:nth-child(2)")
+//secontlang.innerHTML="C"  long approch
+const newli =document.createElement('li')
+newli.textContent="C"  // previos value is "Hi"
+secontlang.replaceWith(newli) // " HI " replace With "C"
+
+
+//edit
+
+const firstlang= document.querySelector("li:first-child")
+firstlang.outerHTML='<li>Typescript</li>' // on first li added Typescript
+
+//remove
+
+ const lastlang =document.querySelector("li:last-child")
+ lastlang.remove(); // remove golan
+</script>   
 </html>
+
