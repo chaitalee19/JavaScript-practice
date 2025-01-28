@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chaitalee</h1>
+    <button><div id="stop">Stop</div></button>
+</body>
+<SCRIPT>
+    // setTimeout(function()  {
+    //    console.log("chaitalee"); // after 2 sec give output
+    // }, 2000); 
+
+   const saychaitalee= function()  {
+       console.log("chaitalee"); // after 2 sec give output
+    };
+    
+    setTimeout(saychaitalee,5000) // 5 sec
+
+   const changetest=function(){document.querySelector('h1').innerHTML="best js series" }// replace h1 tag value to best js series 
+  const changeme= setTimeout(changetest,2000)  // after 2 sec
+
+  document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changeme) // stop pe lage event fire hone se rok lega kuch bhi show nhi hoga phle chaitalee tha to yehi rahega best js series nahi hoga
+  console.log("Stopped");
+  
+
+  })
+
+</SCRIPT>
+</html>
